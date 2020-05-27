@@ -1,0 +1,8 @@
+// LICENSE_CODE MIT
+let E = module.exports;
+E.MS_SEC = 1000;
+E.MS_MIN = E.MS_SEC*60;
+E.MS_HOUR = E.MS_MIN*60;
+E.MS_DAY = E.MS_HOUR*24;
+E.SEC_DAY = E.MS_DAY/E.MS_SEC;
+
