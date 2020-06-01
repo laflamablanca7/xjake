@@ -353,7 +353,7 @@ j.files.config_int_js = pa.bin+'/config_int.js';
 j.file(j.files.config_int_js, [j.files.argv_json,
   pa.src+'/src/system/env/config.js'], ()=>{
   fs.writeFileSync(j.files.config_int_js,
-    '// LICENSE_CODE RB\n// eslint-disable\nmodule.exports = '
+    '// LICENSE_CODE MIT\n// eslint-disable\nmodule.exports = '
     +j.j2s(config_int_js_get()));
 });
 j.files.config_int_json = pa.bin+'/config_int.json';
@@ -416,7 +416,7 @@ const user_local_get = ()=>{
     key_id: 'key_id_local',
     key_secret: 'key_secret_local',
     region: 'us-east-1',
-    bucket: 'rb-cred-local',
+    bucket: 'x-cred-local',
     stage: [{id: 'local'}],
   }};
 };
